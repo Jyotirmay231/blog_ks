@@ -1,0 +1,187 @@
+html,
+body {
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+}
+
+
+/* global classes  */
+
+a {
+    text-decoration: none;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1{
+    font-family: cursive;
+    font-size: 2.5rem;
+}
+h2{
+    font-family: cursive;
+}
+h3{
+    font-family: cursive;
+    font-size: 1.3rem;
+}
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: cursive;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* --------navbar ------ */
+
+.nav {
+    background: white;
+    padding: 0.1rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+
+.nav .nav-menu {
+    justify-content: space-between;
+}
+
+.nav .toggle-collapse {
+    position: absolute;
+    top: 0%;
+    width: 70%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons {
+    font-size: 1.4rem;
+}
+
+.collapse {
+    height: 30rem;
+}
+
+.nav .nav-items {
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link {
+    padding: 1.6rem 1rem;
+    font-size: 1rem;
+    position: relative;
+    text-transform: uppercase;
+
+}
+
+.nav .nav-brand a {
+    font-size: 1.6rem;
+    padding: 1rem 1.4rem;
+    display: block;
+    font-family: cursive;
+}
+
+.nav .social {
+    padding: 1.4rem;
+}
+
+.nav .social i {
+    padding: 0.2rem;
+}
+
+.nav .social i:hover {
+    color: rgb(233, 0, 0);
+}
+
+
+                        /* navbar closes  */
+
+                        /* main start  */
+
+main .site-title{
+    background: url('../assets/background.jpg');
+    background-size: cover;
+    height: 110vh;
+}
+main .site-title .site-background{
+    padding-top: 10rem;
+    text-align: center;
+    color: white;
+}
+
+main .site-title h1,h3{
+    margin: 0.3rem;
+}
+main .site-title .btn{
+    margin: 1.8rem;
+    background: rgb(147, 147, 221);
+    
+}
+main .site-title .btn:hover{
+    background: transparent;
+    border: 1px solid white;
+}
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* viewport less than 750 px  */
+
+@media only screen and (max-width: 750px) {
+    .nav .nav-menu,
+    .nav-items {
+        flex-direction: column;
+    }
+    .nav .toggle-collapse {
+        display: initial;
+        width: 90%;
+    }
+}
+
+
+/* viewport less than 750 px --- closae   */

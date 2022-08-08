@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    display: flexbox;
+}
+.head{
+    background: pink;
+    color: white;
+    height: 20vh;
+    text-align: center;
+}
+.head .up{
+    font-size: 2rem;
+    padding-top: 30px;
+}
+.bg{
+    background: url(../assets/post1.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+  
+                                            /* Fake image */
+  .fakeimg {
+   width: 100%;
+  padding: 20px;
+  }
+
+        /* ----------------cards------------- */
+
+  /* Add a card effect for articles */
+  .card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+  }
+  #more {
+    display: none;
+  }
+  #more2{
+    display: none;
+  }
+  #more3{
+    display: none;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+ 
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 10600px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+    .fakeimg {
+        width: 100%;
+        /* height: auto; */
+      }
+      .fakeimg img{
+        width: 100%;
+      }
+      .bg .card h2,h3,h5{
+        text-align: center;
+      }
+  }
